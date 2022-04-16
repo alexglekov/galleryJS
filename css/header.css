@@ -1,0 +1,47 @@
+:root {
+    --transition: 1s cubic-bezier(0.2, 0.6, 0, 1)
+}
+
+header{
+    max-width: 100%;
+    height: 100px;
+}
+
+.header_ui{
+    display: block;
+    padding-top: 25px;
+    padding-left: 33%;
+}
+
+.header_ui__item{
+    text-align: center;
+    display: inline-block;
+    height: 50px;
+    width: 70px;
+    margin-left: 20px;  
+    background: linear-gradient(45deg, DarkMagenta, Tomato, Violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header_ui__item:hover{
+    border-bottom: 5px solid Violet;
+    transition: var(--transition);
+}
+
+header.headerPostion_right {
+    transform: translateX(30%);
+    transition: transform var(--transition);
+    transition-duration: 3s;
+}
+
+header.headerPostion_right__back {
+    transform: translateX(-0%);
+    transition: transform var(--transition);
+    transition-duration: 3s;
+}
+
+.header__link{
+    height: 50px;
+    width: 70px;
+}
